@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Weatherinfo extends StatelessWidget {
-  Weatherinfo(
+  const Weatherinfo(
     this.temperature,
     this.humidity,
     this.windspeed,
     this.pressure, {
     super.key,
   });
-  var temperature;
-  var humidity;
-  var windspeed;
-  var pressure;
+  final dynamic temperature;
+  final dynamic humidity;
+  final dynamic windspeed;
+  final dynamic pressure;
+
   Row text(String text, var value, IconData icon) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,7 +49,7 @@ class Weatherinfo extends StatelessWidget {
       color: const Color.fromARGB(255, 214, 164, 205),
       child: Column(
         children: [
-          SizedBox(height: 30),
+          SizedBox(height: 10),
 
           text(" Tempreture:  ", temperature, Icons.thermostat),
           text(" Humidity:  ", humidity, Icons.opacity),

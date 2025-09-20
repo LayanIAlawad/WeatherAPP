@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather/weather.dart';
 
 class Cityinput extends StatelessWidget {
-  Cityinput(this.controller, this.wf, this.fitchedWeather, {super.key});
+  const Cityinput(this.controller, this.wf, this.fitchedWeather, {super.key});
 
   final TextEditingController controller;
   final WeatherFactory wf;
@@ -35,7 +35,6 @@ class Cityinput extends StatelessWidget {
 
               var currentWeather = await wf.currentWeatherByCityName(cityName);
               var temp = currentWeather.temperature;
-              //var desc = currentWeather.weatherDescription;
               var hum = currentWeather.humidity;
               var wind = currentWeather.windSpeed;
               var pres = currentWeather.pressure;

@@ -12,10 +12,10 @@ class Weatherscreen extends StatefulWidget {
 }
 
 class _WeatherscreenState extends State<Weatherscreen> {
-  var temperature;
-  var humidity;
-  var windspeed;
-  var pressure;
+  dynamic temperature;
+  dynamic humidity;
+  dynamic windspeed;
+  dynamic pressure;
 
   TextEditingController city = TextEditingController();
   WeatherFactory wf = new WeatherFactory(
